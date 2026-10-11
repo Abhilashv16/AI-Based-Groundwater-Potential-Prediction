@@ -1,3 +1,25 @@
-*.tif
-# Local API credentials
+
+# MOSDAC browser session and cache
+.mosdac_browser/
+
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local credentials
 config.json
+.env
+.env.*
+
+# Large DEM and satellite files
+*.tif
+*.tiff
+
+# Raw rainfall data
+data/raw/rainfall/**/*.h5
+data/raw/rainfall/**/*.hdf5
+
+# Python-generated files
+*.pkl
+*.joblib
