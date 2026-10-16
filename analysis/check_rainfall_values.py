@@ -23,7 +23,6 @@ with h5py.File(file_path, "r") as f:
 
     values = rainfall[mask]
 
-    # Remove missing values
     valid = values[values > -9999]
 
     print("=" * 60)
